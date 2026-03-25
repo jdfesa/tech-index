@@ -1,16 +1,38 @@
-# React + Vite
+# 🌟 Tech Index & Resources
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A curated repository of links, tools, and resources with a premium glassmorphic dark mode aesthetic, inspired by modern "Awesome" lists.
 
-Currently, two official plugins are available:
+## 🚀 Quick Start
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### 1. Clone & Install
+```bash
+git clone https://github.com/jdfesa/tech-index.git
+cd tech-index
+npm install
+```
 
-## React Compiler
+### 2. Run Local Dev Server
+```bash
+npm run dev
+```
+Open `http://localhost:5173` to preview the interface in real-time.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tecnologías Utilizadas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React:** Componentización dinámica.
+- **Vite:** Herramienta de construcción ultrarrápida (HMR).
+- **Vanilla CSS:** Diseño completamente modular sin frameworks de terceros, enfocado en optimizar variables `--root`, efectos `backdrop-filter` (Glassmorphism) y animaciones de bordes con `linear-gradient`.
+- **Lucide React:** Paquete complementario de iconografía vectorizada.
+
+---
+
+## 🤝 Contribuir / Añadir Enlaces
+
+¡Las contribuciones son bienvenidas! Para añadir un nuevo enlace o recurso al índice:
+1. No necesitas editar componentes React.
+2. Simplemente edita el archivo `src/data/resources.json` y añade tu entrada.
+
+👉 Lee las **[Guías de Contribución](./CONTRIBUTING.md)** para conocer el formato exacto del JSON y las reglas para desarrolladores.
+
