@@ -72,10 +72,11 @@ Crea ramas descriptivas para tu trabajo. No uses ramas genéricas como `prueba` 
 - ✅ **Añadir Enlaces:** `data/nombre-recurso` (ej. `data/guia-css`)
 - 🎨 **Cambios Visuales:** `feat/nombre-mejora` (ej. `feat/animacion-hover`)
 - 🐞 **Corregir Errores:** `fix/nombre-error` (ej. `fix/error-icono`)
+- 🔧 **Mantenimiento:** `chore/nombre-tarea` (ej. `chore/actualizar-dependencias`)
 
 ### 3. 🧪 Pruebas Locales Obligatorias
 Antes de hacer commit y abrir un PR, **debes**:
-1. Correr `npm run dev` en tu máquina.
+1. Correr `npm run dev` y `npm run build` en tu máquina para asegurar que no haya errores de compilación.
 2. Navegar por el sitio y probar tu cambio en **Modo Oscuro** y **Modo Claro**.
 3. Abrir la consola de desarrollador del navegador (F12) y verificar que **no existan errores en rojo**.
 
@@ -88,6 +89,7 @@ Antes de hacer commit y abrir un PR, **debes**:
 3. Añade tus datos o código y pruébalo localmente.
 4. Haz Commit con un mensaje descriptivo: `git commit -m "feat(data): añadir documentación de Vite"`
 5. Empuja tu rama: `git push origin data/nuevo-recurso`
-6. Abre el Pull Request en GitHub.
+6. Abre el Pull Request en GitHub. Asegúrate de rellenar la **[Plantilla de Pull Request](./.github/PULL_REQUEST_TEMPLATE.md)** que se cargará automáticamente.
+
 
 
