@@ -59,10 +59,35 @@ Si vas a modificar los archivos `.css` o componentes:
 
 ---
 
-## 🌿 Flujo de Trabajo (Pull Requests)
+## 🌿 Flujo de Trabajo y Buenas Prácticas (Git Flow)
 
-1. Crea una rama descriptiva: `git checkout -b feat/nuevo-recurso-xyz`
-2. Añade los datos y pruébalo localmente con `npm run dev`.
-3. Haz Commit: `git commit -m "feat(data): añadir recurso xyz"`
-4. Empuja los cambios y abre un **Pull Request**.
+Para prevenir errores accidentales que rompan la vista del sitio para todos, seguimos estas directrices estrictas:
+
+### 1. 🛑 Regla de Oro: `main` es sagrado
+*   **Nunca hagas push directo a la rama `main`.**
+*   Todo cambio debe pasar por un **Pull Request (PR)** y ser aprobado por al menos otro miembro del equipo (o revisado por ti mismo si sois pocos, pero simulando la revisión).
+
+### 2. 🌳 Nomenclatura de Ramas
+Crea ramas descriptivas para tu trabajo. No uses ramas genéricas como `prueba` o `cambios`. Usa estos prefijos:
+- ✅ **Añadir Enlaces:** `data/nombre-recurso` (ej. `data/guia-css`)
+- 🎨 **Cambios Visuales:** `feat/nombre-mejora` (ej. `feat/animacion-hover`)
+- 🐞 **Corregir Errores:** `fix/nombre-error` (ej. `fix/error-icono`)
+
+### 3. 🧪 Pruebas Locales Obligatorias
+Antes de hacer commit y abrir un PR, **debes**:
+1. Correr `npm run dev` en tu máquina.
+2. Navegar por el sitio y probar tu cambio en **Modo Oscuro** y **Modo Claro**.
+3. Abrir la consola de desarrollador del navegador (F12) y verificar que **no existan errores en rojo**.
+
+---
+
+## 🚀 Pasos para tu primer Pull Request
+
+1. Sincroniza tu local: `git checkout main && git pull`
+2. Crea tu rama: `git checkout -b data/nuevo-recurso`
+3. Añade tus datos o código y pruébalo localmente.
+4. Haz Commit con un mensaje descriptivo: `git commit -m "feat(data): añadir documentación de Vite"`
+5. Empuja tu rama: `git push origin data/nuevo-recurso`
+6. Abre el Pull Request en GitHub.
+
 
