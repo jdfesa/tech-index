@@ -1,0 +1,35 @@
+{
+  "categories": [
+    { "id": "agents", "name": "Agents", "icon": "Bot" },
+    { "id": "tools", "name": "Tools", "icon": "Wrench" },
+    { "id": "learning", "name": "Learning", "icon": "BookOpen" },
+    { "id": "workflows", "name": "Workflows", "icon": "Workflow" },
+    { "id": "instructions", "name": "Instructions", "icon": "FileText" }
+  ],
+  "resources": [
+    {
+      "id": "1",
+      "title": "Awesome Default Agent",
+      "description": "A very cool standard agent for GitHub copilot.",
+      "url": "https://github.com/example/agent",
+      "category": "agents",
+      "tags": ["AI", "Copilot"]
+    },
+    {
+      "id": "2",
+      "title": "Vanilla CSS Styling Guide",
+      "description": "Best practices for writing modular vanilla CSS for modern web apps.",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+      "category": "learning",
+      "tags": ["CSS", "Design"]
+    },
+    {
+      "id": "3",
+      "title": "Vite Documentation",
+      "description": "Next generation frontend tooling.",
+      "url": "https://vitejs.dev/",
+      "category": "tools",
+      "tags": ["Build", "Tooling"]
+    }
+  ]
+}
