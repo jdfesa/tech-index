@@ -21,9 +21,9 @@
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
   
   /* Spacing */
-  --radius-sm: 6px;
-  --radius-md: 12px;
-  --radius-lg: 20px;
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
   --radius-full: 9999px;
   
   --transition-speed: 0.3s;
