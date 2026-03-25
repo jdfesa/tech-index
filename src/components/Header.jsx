@@ -1,7 +1,10 @@
-import { Search, Code } from 'lucide-react'
+import { Search, Code, Sun, Moon } from 'lucide-react'
 import './Header.css'
 
-function Header({ searchQuery, setSearchQuery }) {
+function Header({ searchQuery, setSearchQuery, theme, setTheme }) {
+  const toggleTheme = () => {
+    setTheme(theme === 'dark' ? 'light' : 'dark')
+  }
   return (
     <header className="header glass">
       <div className="header-container">
@@ -27,7 +30,16 @@ function Header({ searchQuery, setSearchQuery }) {
         </div>
         
         <div className="header-actions">
-          <a href="#" className="github-link glass-card">
+          <button className="theme-toggle glass-card" onClick={toggleTheme} aria-label="Toggle Theme">
+            <div className={`toggle-icon ${theme === 'dark' ? 'active' : ''}`}>
+              <Moon size={18} />
+            </div>
+            <div className={`toggle-icon ${theme === 'light' ? 'active' : ''}`}>
+              <Sun size={18} />
+            </div>
+          </button>
+
+          <a href="https://github.com/jdfesa/tech-index" target="_blank" rel="noopener noreferrer" className="github-link glass-card">
             <Code size={20} />
             <span>GitHub</span>
           </a>

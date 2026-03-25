@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import CategoryFilter from './components/CategoryFilter'
@@ -9,6 +9,14 @@ import './App.css'
 function App() {
   const [activeCategory, setActiveCategory] = useState("all")
   const [searchQuery, setSearchQuery] = useState("")
+  const [theme, setTheme] = useState(() => {
+    return localStorage.getItem('theme') || 'dark'
+  })
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme)
+    localStorage.setItem('theme', theme)
+  }, [theme])
 
   const filteredResources = data.resources.filter(resource => {
     const matchesCategory = activeCategory === "all" || resource.category === activeCategory
@@ -23,7 +31,7 @@ function App() {
 
   return (
     <div className="app-container">
-      <Header searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
+      <Header searchQuery={searchQuery} setSearchQuery={setSearchQuery} theme={theme} setTheme={setTheme} />
       
       <main className="main-content">
         <Hero />

@@ -88,6 +88,42 @@
 .header-actions {
   display: flex;
   align-items: center;
+  gap: 1rem;
+}
+
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  padding: 0.35rem;
+  gap: 0.25rem;
+  border-radius: var(--radius-full);
+  background: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.toggle-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  color: var(--text-muted);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.toggle-icon.active {
+  background: var(--bg-surface);
+  color: var(--accent-purple);
+  box-shadow: 0 0 10px rgba(139, 92, 246, 0.2);
+}
+
+:root[data-theme="light"] .toggle-icon.active {
+  background: #FFF;
+  color: #D97706; /* Warm Amber for Sun */
+  box-shadow: 0 2px 8px rgba(217, 119, 6, 0.2);
 }
 
 .github-link {
@@ -102,4 +138,9 @@
 
 .github-link:hover {
   color: white;
+}
+
+:root[data-theme="light"] .github-link:hover {
+  color: var(--text-primary);
+  background: rgba(0, 0, 0, 0.05);
 }

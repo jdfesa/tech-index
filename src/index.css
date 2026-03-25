@@ -1,5 +1,5 @@
 :root {
-  /* Dark mode modern palette */
+  /* Default: Dark mode modern palette */
   --bg-base: #0A0A0A;
   --bg-surface: #111111;
   --bg-card: rgba(255, 255, 255, 0.03);
@@ -25,6 +25,44 @@
   --radius-md: 12px;
   --radius-lg: 20px;
   --radius-full: 9999px;
+  
+  --transition-speed: 0.3s;
+}
+
+/* Light mode override: Warm paper / soft grey aesthetic */
+:root[data-theme="light"] {
+  --bg-base: #F5F4EF; /* Papel suave ligeramente cálido */
+  --bg-surface: #EDEBE4;
+  --bg-card: rgba(0, 0, 0, 0.02);
+  --bg-card-hover: rgba(0, 0, 0, 0.04);
+  --border-color: rgba(0, 0, 0, 0.08);
+  --border-hover: rgba(0, 0, 0, 0.15);
+  
+  --text-primary: #1C1C1E;
+  --text-secondary: #52525B;
+  --text-muted: #71717A;
+}
+
+body {
+  transition: background-color var(--transition-speed), color var(--transition-speed);
+}
+
+.glass {
+  transition: background var(--transition-speed), border var(--transition-speed);
+}
+:root[data-theme="light"] .glass {
+  background: rgba(245, 244, 239, 0.8); /* Match paper base with opacity */
+}
+
+.glass-card {
+  transition: all var(--transition-speed) ease;
+}
+:root[data-theme="light"] .glass-card {
+  box-shadow: 0 4px 20px -5px rgba(0, 0, 0, 0.05);
+}
+:root[data-theme="light"] .glass-card:hover {
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.03);
 }
 
 * {
