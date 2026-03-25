@@ -1,13 +1,16 @@
-import { ExternalLink, Bot, Wrench, BookOpen, Workflow, FileText, LayoutTemplate } from 'lucide-react'
+import { ExternalLink, Layout, Server, Cloud, Database, Smartphone, Bot, Shield, Wrench, BookOpen } from 'lucide-react'
 import './ResourceCard.css'
 
 const iconMap = {
+  Layout,
+  Server,
+  Cloud,
+  Database,
+  Smartphone,
   Bot,
+  Shield,
   Wrench,
-  BookOpen,
-  Workflow,
-  FileText,
-  LayoutTemplate
+  BookOpen
 }
 
 function ResourceCard({ resource }) {

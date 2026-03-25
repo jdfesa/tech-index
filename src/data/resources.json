@@ -1,10 +1,14 @@
 {
   "categories": [
-    { "id": "agents", "name": "Agents", "icon": "Bot" },
+    { "id": "frontend", "name": "Frontend", "icon": "Layout" },
+    { "id": "backend", "name": "Backend", "icon": "Server" },
+    { "id": "devops", "name": "DevOps & Cloud", "icon": "Cloud" },
+    { "id": "databases", "name": "Databases", "icon": "Database" },
+    { "id": "mobile", "name": "Mobile", "icon": "Smartphone" },
+    { "id": "ai", "name": "AI & ML", "icon": "Bot" },
+    { "id": "security", "name": "Security", "icon": "Shield" },
     { "id": "tools", "name": "Tools", "icon": "Wrench" },
-    { "id": "learning", "name": "Learning", "icon": "BookOpen" },
-    { "id": "workflows", "name": "Workflows", "icon": "Workflow" },
-    { "id": "instructions", "name": "Instructions", "icon": "FileText" }
+    { "id": "learning", "name": "Learning", "icon": "BookOpen" }
   ],
   "resources": [
     {
@@ -12,7 +16,8 @@
       "title": "Awesome Default Agent",
       "description": "A very cool standard agent for GitHub copilot.",
       "url": "https://github.com/example/agent",
-      "category": "agents",
+      "category": "ai",
+      "icon": "Bot",
       "tags": ["AI", "Copilot"]
     },
     {
@@ -20,7 +25,8 @@
       "title": "Vanilla CSS Styling Guide",
       "description": "Best practices for writing modular vanilla CSS for modern web apps.",
       "url": "https://developer.mozilla.org/en-US/docs/Web/CSS",
-      "category": "learning",
+      "category": "frontend",
+      "icon": "Layout",
       "tags": ["CSS", "Design"]
     },
     {
@@ -29,6 +35,7 @@
       "description": "Next generation frontend tooling.",
       "url": "https://vitejs.dev/",
       "category": "tools",
+      "icon": "Wrench",
       "tags": ["Build", "Tooling"]
     }
   ]

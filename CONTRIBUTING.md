@@ -32,22 +32,29 @@ Cada recurso debe ser un objeto dentro del array `"resources"`. Copia y pega est
 
 ### 2. Categorías Disponibles
 El campo `"category"` debe coincidir exactamente con una de estas opciones:
-- `agents`
-- `tools`
-- `learning`
-- `workflows`
-- `instructions`
+- `frontend` (Frontend Dev)
+- `backend` (Backend Dev)
+- `devops` (DevOps & Cloud)
+- `databases` (Bases de Datos)
+- `mobile` (Desarrollo Móvil)
+- `ai` (Data, AI & Machine Learning)
+- `security` (Ciberseguridad)
+- `tools` (Herramientas y Utilidades)
+- `learning` (Recursos de Aprendizaje)
 
 ---
 
 ### 3. Iconos Disponibles
 Si usas el campo `"icon"`, puedes usar cualquiera de estos nombres de la librería `Lucide`:
-- `Bot` (Para Inteligencia Artificial o Assistants)
-- `Wrench` (Herramientas / Tools / Utils)
+- `Layout` (Frontend, Diseño, UI)
+- `Server` (Backend, Servidores, APIs)
+- `Cloud` (DevOps, AWS, GCP, Azure)
+- `Database` (SQL, NoSQL, Almacenamiento)
+- `Smartphone` (iOS, Android, React Native)
+- `Bot` (Inteligencia Artificial, ChatGPT, Modelos)
+- `Shield` (Seguridad, Testing, Pentesting)
+- `Wrench` (Herramientas, Scripts, IDEs)
 - `BookOpen` (Guías, Tutoriales o Documentación)
-- `Workflow` (Pipelines o Automatizaciones)
-- `FileText` (Instrucciones o Prompts)
-- `LayoutTemplate` (Plantillas de diseño)
 
 ---
 
